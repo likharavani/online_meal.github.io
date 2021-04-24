@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.yourscreatively.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            color:white;
+            position: relative;
+            top:80px;
+            height:auto;
+            z-index: -1;
+            text-align: center;
+        }
+        .container_team{
+            display: flex;
+            z-index: -1;
+            flex-direction: column;
+            justify-content: center;
+            background-color:black;
+            color:white;
+            position: relative;
+            top:80px;
+            height:auto;
+            text-align: center;
+        }
+        .container_team h2{
+            margin:1rem;
+            color:rgb(241, 241, 138);
+            font-size: 2rem;
+            padding-top:2rem;
+        }
+        .container h2{
+            margin:1rem;
+            color:rgb(201, 153, 63);
+            padding-top:3rem;
+            font-size: 2.3rem;
+        }
+        .container1{
+            display: grid;
+            height:auto;
+            grid-template-columns: repeat(auto-fit,minmax(290px,2fr));
+            grid-gap: 3rem;
+            padding:3rem;
+        }
+        .container1_team{
+        display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+    flex-wrap: wrap;
+    height:auto;
+        }
+        .box_team{
+            background-color: black;
+            color:white;
+            box-shadow: 4px 4px 5px rgb(241, 241, 138);
+            padding:1rem;
+            height: auto;
+            margin:1rem;
+            width:25%;
+            border: 2px solid rgb(241, 241, 138);
+
+        }
+        
+
+        .box{
+            background-color:black;
+            box-shadow: 4px 4px 5px rgb(163, 124, 50);
+            padding:1rem;
+            height: auto;
+            border: 2px solid rgb(207, 158, 66);
+
+        
+           
+        }
+      .box_team img{
+          width:100px;
+          height:100px;
+        border-radius: 99px;
+
+      }
+      .box_team h2{
+          padding-top: 0rem;
+          font-size: 1rem;
+          color:gray;
+      }
+        .box img{
+            width:100px;
+            height:100px;
+            box-shadow: 3px 3px 4px rgb(167, 130, 64);
+
+            border-radius:56px;
+        }
+        .container1 .box h2{
+            font-size: 2rem;
+            color:white;
+            padding-top:0.5rem;
+        }
+        .container1 .box p{
+            color:white;
+            font-size: 1.5rem;
+        }
+        .conatct i{
+            font-size: 1.5rem;
+            margin-right: 0.2rem;
+            text-align: center;
+            color:rgb(167, 130, 64);
+        }
+        .active{
+            border-bottom: 2px solid rgb(167, 130, 64);
+        }
+        .conatct{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding:0.1rem;
+        }
+        .conatct p{
+            text-align: center;
+        }
+
+        footer {
+            justify-content:space-between;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-top:5rem;
+            padding: 20px 100px;
+            background-color: rgb(46 45 47);
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        footer div.flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+            flex-direction: column;
+
+        }
+        .flex-container h2{
+            color:white;
+        }
+       
+
+        .sci {
+            margin-top: 10px;
+            display: flex;
+        
+        }
+
+        .sci li {
+            list-style: none;
+        }
+
+        .sci li a {
+            display: inline-block;
+            width: 40px;
+            height: auto;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .sci li a:hover {
+            background: tomato;
+        }
+
+        .sci li a .fa {
+            color: grey;
+            font-size: 17px;
+        }
+
+        .quicklinks {
+            position: relative;
+            width: 25%;
+            
+            text-align: center;
+        }
+
+        body>footer>div.quicklinks>h2 {
+            color:white;
+        }
+
+        .quicklinks ul li {
+            list-style: none;
+        }
+
+        .quicklinks ul li a {
+            color:grey;
+            text-decoration: none;
+            margin-bottom: 0px;
+            display: inline-block;
+        }
+
+        .quicklinks ul li a:hover {
+            color: grey;
+        }
+        .contact{
+            width: calc(35%-60px);
+            
+            text-align: center;
+            margin-right: 0 !important;
+
+        }
+        .contact .info{
+            position: relative;
+            text-align: center;
+            
+        }
+        .contact .info li{
+            display: flex;
+            margin-bottom: 16px;
+            justify-content: center;
+
+        }
+        .contact .info li span{
+            color:grey;
+            font-size: 17px;
+             
+        }
+
+        .navbar{
+      display: flex;
+      padding:0.7rem 4.3rem;
+      height:auto;
+      position:fixed;
+      width:100%;
+      align-items: center;
+      background-color: black;
+      justify-content: space-between;
+  }
+  .one img{
+      width:80px;
+      border-radius: 14rem;
+  }
+
+  .two{
+      display: flex;
+  }
+  .two ul{
+      
+      display: flex;
+    
+  }
+  .two ul li{
+    list-style: none;
+    padding:0.9rem 1.5rem;
+  }
+  .two ul li a{
+      font-size: 1.3rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: white;
+      font-weight: 400;
+  }
+  .two ul li a:hover{
+      transition: all;
+
+      border-bottom: 2px solid yellow;
+      
+  }
+  #toggle{
+      display :none;
+  }
+  .togglearea{
+      display:none;
+
+  }
+  .togglearea i{
+      font-size: 3rem;
+      color:white;
+  }
+  
+ 
+  @media only screen and (max-width:800px)
+  {
+      .two ul li {
+        padding:0.9rem 1.1rem;
+      }
+      .two {
+          float:right;
+      }
+  }
+  @media only screen and (max-width:700px)
+  {
+     .cont{
+         flex-wrap: wrap;
+     } 
+     .cont .sec{
+        border: none;
+     }
+     
+    .two {
+        display: none;
+    }
+  
+     #toggle:checked + .two{
+        display: flex;
+        position: fixed;
+    }
+    .two  {
+        height:auto;
+    }
+    .happy{
+        margin:3rem;
+    }
+    .two ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-color: rgb(54, 54, 54);
+        top:95px;
+        left:0px;
+        text-align: center;
+    }
+    .two ul li{
+        display: block;
+        flex-direction: column;
+        margin:.5rem 0rem;
+    }
+    .two ul li a:hover{
+        color:yellow;
+        transition: all 0.2s;
+        border-bottom: none;
+    }
+    .togglearea{
+        display: flex;
+    }
+
+  }
+  .container p{
+      font-size: 1.3rem;
+      text-align: center;
+  }
+  
+ 
+    </style>
+</head>
+<body>
+    <nav  class="navbar">
+        <div class="one">
+            <img src="asperlogo.jpg">
+        </div>
+        <div class="togglearea">
+            <label for="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </div>
+        <input type="checkbox" id="toggle">
+        <div class="two">
+            <ul>
+                <li><a href="#" >home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">clients </a></li>
+                <li><a href="#" class="active">members</a></li>
+               
+                <li><a href="#">contact </a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="happy">Our  Happy Members</h2>
+        <p>
+            Members of the  team have various skills and knowledge.<br> Each person has a different role and responsibilities.The main<br>  purpose of the team is to create a high-quality product.
+        </p>
+            <div class="container1">
+
+                <div class="box"><img src="Anshumansir.jpg">
+                    <h2>
+                        Anshuman Prajapati
+                    </h2>
+                    <p>
+                        Asper  Co-head
+                        <br>
+                      8+ years experience 
+                      <br>
+                      <div class="conatct">
+                          <i class="fa fa-phone-square" aria-hidden="true"></i>
+                          <p>8586845923</p>
+                      </div>
+                      <div class="conatct">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p>anshumanprajapati</p>
+                    </div>
+                    </p></div>
+                    <div class="box"><img src="Paridhi-mam-ConvertImage.jpg">
+                        <h2>
+                            Paridhi Dandwate
+                        </h2>
+                        <p>
+                            Asper  Co-head
+                            <br>
+                          3+ years experience 
+                          <br>
+                          <div class="conatct">
+                              <i class="fa fa-phone-square" aria-hidden="true"></i>
+                              <p>8586845923</p>
+                          </div>
+                          <div class="conatct">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p>__paridhi_</p>
+                        </div>
+                        </p></div>
+                <div class="box"><img src="Anjali mam.jpg">
+                <h2>
+                    Anjali Chouhan
+                </h2>
+                <p>
+                  Asper  Co-head
+                  <br>
+                4+ years experience 
+                
+                <br>
+                <div class="conatct">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <p>8586845923</p>
+                </div>
+                <div class="conatct">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <p>_anjali_rzu_</p>
+                </div>
+                </p></div>
+                <div class="box"><img src="Shubhra mam.jpg">
+                    <h2>
+                        Shubhra Silakari
+                    </h2>
+                    <p>
+                        Asper  Co-head
+                        <br>
+                      4+ years experience
+                      <br>
+                      <div class="conatct">
+                          <i class="fa fa-phone-square" aria-hidden="true"></i>
+                          <p>8586845923</p>
+                      </div>
+                      <div class="conatct">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p>shubhra.7</p>
+                    </div> 
+                    </p></div>
+                <div class="box"><img src="ritik sir.jpg">
+                <h2>
+                    Ritik Gupta
+                </h2>
+                <p>
+                    Asper  Co-head
+                    <br>
+                  2+ years experience 
+                  <br>
+                  <div class="conatct">
+                      <i class="fa fa-phone-square" aria-hidden="true"></i>
+                      <p>8586845923</p>
+                  </div>
+                  <div class="conatct">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <p>ritik_gupta24</p>
+                </div>
+                </p></div>
+                <div class="box"><img src="rakeshsir.jpg">
+                <h2>
+                    Rakesh Hemwani
+                </h2>
+                <p>
+                    Asper  Co-head
+                  <br>
+                5+ years experience 
+                <br>
+                <div class="conatct">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <p>8586845923</p>
+                </div>
+                <div class="conatct">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <p>rakesh_hemwani</p>
+                </div>
+                </p></div>
+                
+               
+                
+              
+            </div>
+
+    </div>
+
+    <div class="container_team">
+        <h2 class="happy">Our Supportive team</h2>
+        
+            <div class="container1_team">
+                <div class="box_team"><img src="suyash.jpg">
+                    <h2>
+                        Suyash Rahatekar
+                    </h2>
+                    <p>Web Consultant</p>
+                </div>
+                <div class="box_team"><img src="mayank.jpg">
+                    <h2>
+                      Mayank Tripathi
+                    </h2>
+                    <p>Digital strategist</p>
+                </div>
+                <div class="box_team"><img src="avanika.jpg">
+                    <h2>
+                        Avanika Likhar
+                    </h2>
+                    <p>Web Consultant</p>
+                </div>
+            
+                <div class="box_team"><img src="tanmay.jpg">
+                    <h2>
+                        Tamnmay Rajawat
+                    </h2>
+                    <p>App Developer, Designer</p>
+                </div>
+           
+                <div class="box_team"><img src="bhavesh.jpg">
+                    <h2>
+                        Bhavesh Atoot
+                    </h2>
+                    <p>
+                        Designer and Content Manager
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <footer>
+        <div class="quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+                <li> <a href="#">Terms & Conditions</a> </li>
+                <li> <a href="#">FAQ</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li> <a href="#">Help</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2 style="color:white">Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>University Institute of Technology,<br>
+                        RGPV, Bhopal (M. P.), India </span>
+                    
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    <span>yours5creative@gmail.com</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                    <span> +91 99160 42021</span>
+                    
+                </li>
+            </ul>
+        </div>
+       
+        <div class="flex-container">
+            <h2>Social Media </h2>
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+       
+        
+    </footer>
+    
+</body>
+</html>
